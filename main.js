@@ -39,7 +39,8 @@ function addTask() {
   };
   taskList.push(task);
   taskInput.value = "";
-  render();
+  filter()
+//   render();
   console.log(taskList);
 }
 
