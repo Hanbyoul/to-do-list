@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  background-image: url("Image/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: white;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-top: 10px solid blanchedalmond;
+  border-bottom: 10px solid blanchedalmond;
+}
+
+#add-button {
+  border: none;
+  background-color: blanchedalmond;
+}
+
+.task-area {
+  margin-top: 2em;
+  border: 1px solid lightgray;
+}
+
+.task-tabs {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+
+.task-tabs div {
+  padding: 1em;
+  cursor: pointer;
+}
+
+.input-area {
+  position: relative;
+}
+
+#task-input {
+  transition: padding-top 0.4s, margin-top 0.4s;
+  border: none;
+  width: 80%;
+  border: 1px solid blanchedalmond;
+}
+#task-input:focus {
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  transition: 0.5s;
+  padding-top: 35px;
+}
+
+#task-input + label > span {
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  color: #8f8f8f;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+#task-input:focus + label > span {
+  top: 65px;
+  color: #8f8f8f;
+  transition: 0.4s;
+}
+
+#under-line {
+  height: 4px;
+  background-color: pink;
+  position: absolute;
+  width: 60px;
+  left: 0px;
+  top: 46px;
+  padding: 0px;
+  transition: 0.5s;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+  width: 100%;
+}
+
+.task span {
+  padding: 1em;
+}
+
+.button-check {
+  color: green;
+}
+
+.button-trash {
+  color: red;
+}
+
+.button-rotate {
+  color: black;
+}
+.task-done {
+  text-decoration: line-through;
+  background-color: gray;
+  /* background-image: linear-gradient(to right, grey 80%, white 20%) */
+}
+
+/* .background{
+    background-image: linear-gradient(to right, grey 80%, white 20%)
+
+} */
+
+.button-box {
+  display: flex;
+}
+
+.button-box button {
+  border: none;
+  height: 100%;
+  width: 5em;
+  margin: 0;
+  background-color: white;
+}
+
+.button-box button:first-child:hover {
+  background-color: rgba(95, 255, 119, 0.925);
+  transition: 0.5s;
+}
+
+.button-box button:nth-child(2):hover {
+  background-color: rgba(238, 114, 114, 0.857);
+  transition: 0.5s;
+}
